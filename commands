@@ -1,0 +1,19 @@
+$ django-admin calculator
+
+$ pip3 install djangorestframework
+
+$ python manage.py startapp webapp
+
+$ python manage.py makemigrations
+
+$ python manage.py migrate
+
+$ python manage.py  createsuperuser
+
+# Override default port for `runserver` command
+    from django.core.management.commands.runserver import Command as runserver
+    runserver.default_port = "8080"
+    runserver.default_addr = "0.0.0.0"
+
+ALLOWED_HOSTS = ['*']
+
